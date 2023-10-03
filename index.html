@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="menu-icon">
+      <span
+        class="material-symbols-outlined"
+        style="
+          color: white;
+          border-radius: 12px;
+          border-color: #393d53;
+          background-color: #393d53;
+          height: 40px;
+          width: 40px;
+          display: flex;
+          margin: 25px 0px 0px 20px;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        sort
+      </span>
+    </div>
+    <!-- LEFT SECTION -->
+    <div class="left-section">
+      <div class="left-section-container">
+        <h1>Hi Samantha!</h1>
+        <p class="subtitle">Welcome back to the workspace, we missed You!</p>
+        <div class="search-container">
+          <span class="material-symbols-outlined"> search </span>
+          <input
+            class="search-bar"
+            type="search"
+            placeholder="Search Task or Project..."
+          />
+        </div>
+        <div class="projects-container">
+          <h2>Projects (13)</h2>
+          <div class="row">
+            <div class="column" id="column-1">
+              <div class="card-container">
+                <div class="card" id="container-1" onclick="viewTasks(1)"></div>
+                <p class="card-text" id="card-1"></p>
+              </div>
+              <div class="card-container">
+                <div class="card" id="container-4" onclick="viewTasks(4)"></div>
+                <p class="card-text" id="card-4"></p>
+              </div>
+            </div>
+
+            <div class="column" id="column-2">
+              <div class="card-container middle-card">
+                <div class="card" id="container-2" onclick="viewTasks(2)"></div>
+                <p class="card-text" id="card-2"></p>
+              </div>
+              <div class="card-container middle-card">
+                <div class="card" id="container-5" onclick="viewTasks(5)"></div>
+                <p class="card-text" id="card-5"></p>
+              </div>
+            </div>
+
+            <div class="column" id="column-3">
+              <div class="card-container">
+                <div class="card" id="container-3" onclick="viewTasks(3)"></div>
+                <p class="card-text" id="card-3"></p>
+              </div>
+              <div class="card-container">
+                <div class="card" id="container-6" onclick="viewTasks(6)"></div>
+                <p class="card-text" id="card-6"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- RIGHT SECTION -->
+    <div class="right-section">
+      <div class="right-section-container">
+        <h1 class="right-section-name"></h1>
+        <p class="right-section-name subtitle">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis
+          cum repudiandae voluptatem perspiciatis.
+        </p>
+        <div class="today-bar">
+          <h4
+            style="margin-top: 20px; display: inline; width: auto"
+            class="today"
+          >
+            Today
+          </h4>
+          <span class="material-symbols-outlined" id="horizontal-nav">
+            more_horiz
+          </span>
+        </div>
+        <hr
+          class="rounded"
+          style="margin: 10px 0px 20px 0px; border-color: #f4f4f4; width: auto"
+        />
+        <ul class="task-list">
+          <div class="todo-container"></div>
+        </ul>
+      </div>
+      <div class="addButton" onclick="prompt(`Create ToDo`)">+</div>
+    </div>
+  </body>
+</html>

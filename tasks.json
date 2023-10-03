@@ -1,0 +1,400 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "projectName": "Personal",
+      "todos": [
+        {
+          "id": 1,
+          "task": "Buy groceries for the week",
+          "isChecked": false,
+          "status": "in progress"
+        },
+        {
+          "id": 2,
+          "task": "Clean the house and vacuum the living room",
+          "isChecked": true,
+          "status": "approved"
+        },
+        {
+          "id": 3,
+          "task": "Read 'The Great Gatsby' for book club meeting",
+          "isChecked": true,
+          "status": "in progress"
+        },
+        {
+          "id": 4,
+          "task": "Go for a 30-minute jog in the park",
+          "isChecked": true,
+          "status": "in review"
+        },
+        {
+          "id": 5,
+          "task": "Watch a documentary about space exploration",
+          "isChecked": false,
+          "status": "approved"
+        },
+        {
+          "id": 6,
+          "task": "Cook a healthy dinner with salmon and vegetables",
+          "isChecked": true,
+          "status": "in progress"
+        },
+        {
+          "id": 7,
+          "task": "Learn the basics of photography",
+          "isChecked": true,
+          "status": "in review"
+        },
+        {
+          "id": 8,
+          "task": "Take a leisurely walk in the evening",
+          "isChecked": true,
+          "status": "approved"
+        },
+        {
+          "id": 9,
+          "task": "Plan a weekend getaway to the mountains",
+          "isChecked": false,
+          "status": "in progress"
+        },
+        {
+          "id": 10,
+          "task": "Visit the local art gallery",
+          "isChecked": false,
+          "status": "in review"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "projectName": "Work",
+      "todos": [
+        {
+          "id": 11,
+          "task": "Finish the quarterly financial report",
+          "isChecked": false,
+          "status": "in progress"
+        },
+        {
+          "id": 12,
+          "task": "Attend the team meeting at 10 AM",
+          "isChecked": true,
+          "status": "in review"
+        },
+        {
+          "id": 13,
+          "task": "Send follow-up emails to clients",
+          "isChecked": true,
+          "status": "approved"
+        },
+        {
+          "id": 14,
+          "task": "Prepare a PowerPoint presentation for the conference",
+          "isChecked": false,
+          "status": "in progress"
+        },
+        {
+          "id": 15,
+          "task": "Conduct code review for the software update",
+          "isChecked": true,
+          "status": "in review"
+        },
+        {
+          "id": 16,
+          "task": "Submit project proposal to the management",
+          "isChecked": false,
+          "status": "approved"
+        },
+        {
+          "id": 17,
+          "task": "Plan the project kickoff meeting",
+          "isChecked": true,
+          "status": "in progress"
+        },
+        {
+          "id": 18,
+          "task": "Meet with a potential client to discuss the contract",
+          "isChecked": false,
+          "status": "in review"
+        },
+        {
+          "id": 19,
+          "task": "Debug and resolve software issues reported by users",
+          "isChecked": false,
+          "status": "approved"
+        },
+        {
+          "id": 20,
+          "task": "Delegate tasks to the project team members",
+          "isChecked": true,
+          "status": "in progress"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "projectName": "Fitness",
+      "todos": [
+        {
+          "id": 21,
+          "task": "Go to the gym and do a full-body workout",
+          "isChecked": true,
+          "status": "in review"
+        },
+        {
+          "id": 22,
+          "task": "Practice yoga for 30 minutes",
+          "isChecked": false,
+          "status": "approved"
+        },
+        {
+          "id": 23,
+          "task": "Plan a healthy meal prep for the week",
+          "isChecked": false,
+          "status": "in progress"
+        },
+        {
+          "id": 24,
+          "task": "Run 5 kilometers in the park",
+          "isChecked": true,
+          "status": "in review"
+        },
+        {
+          "id": 25,
+          "task": "Track daily calorie intake",
+          "isChecked": false,
+          "status": "approved"
+        },
+        {
+          "id": 26,
+          "task": "Learn a new fitness routine",
+          "isChecked": true,
+          "status": "in progress"
+        },
+        {
+          "id": 27,
+          "task": "Join a local sports club",
+          "isChecked": false,
+          "status": "in review"
+        },
+        {
+          "id": 28,
+          "task": "Take the stairs instead of the elevator",
+          "isChecked": true,
+          "status": "approved"
+        },
+        {
+          "id": 29,
+          "task": "Create a fitness goals journal",
+          "isChecked": true,
+          "status": "in progress"
+        },
+        {
+          "id": 30,
+          "task": "Attend a fitness workshop",
+          "isChecked": false,
+          "status": "in review"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "projectName": "Home Improvement",
+      "todos": [
+        {
+          "id": 31,
+          "task": "Paint the living room walls",
+          "isChecked": true,
+          "status": "approved"
+        },
+        {
+          "id": 32,
+          "task": "Install new lighting fixtures",
+          "isChecked": true,
+          "status": "in progress"
+        },
+        {
+          "id": 33,
+          "task": "Organize the garage storage",
+          "isChecked": false,
+          "status": "in review"
+        },
+        {
+          "id": 34,
+          "task": "Fix the leaky faucet in the kitchen",
+          "isChecked": false,
+          "status": "approved"
+        },
+        {
+          "id": 35,
+          "task": "Plant flowers in the garden",
+          "isChecked": true,
+          "status": "in progress"
+        },
+        {
+          "id": 36,
+          "task": "Upgrade the home security system",
+          "isChecked": false,
+          "status": "in review"
+        },
+        {
+          "id": 37,
+          "task": "Replace old carpet with hardwood flooring",
+          "isChecked": true,
+          "status": "approved"
+        },
+        {
+          "id": 38,
+          "task": "Clean and declutter the attic",
+          "isChecked": true,
+          "status": "in progress"
+        },
+        {
+          "id": 39,
+          "task": "Renovate the bathroom",
+          "isChecked": true,
+          "status": "in review"
+        },
+        {
+          "id": 40,
+          "task": "Upgrade the kitchen appliances",
+          "isChecked": false,
+          "status": "approved"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "projectName": "Travel",
+      "todos": [
+        {
+          "id": 41,
+          "task": "Book flight tickets for the vacation",
+          "isChecked": true,
+          "status": "in progress"
+        },
+        {
+          "id": 42,
+          "task": "Create an itinerary for the trip",
+          "isChecked": false,
+          "status": "approved"
+        },
+        {
+          "id": 43,
+          "task": "Research local attractions and restaurants",
+          "isChecked": true,
+          "status": "in review"
+        },
+        {
+          "id": 44,
+          "task": "Pack essentials and travel documents",
+          "isChecked": false,
+          "status": "in progress"
+        },
+        {
+          "id": 45,
+          "task": "Notify neighbors about house sitting",
+          "isChecked": true,
+          "status": "approved"
+        },
+        {
+          "id": 46,
+          "task": "Exchange currency for the trip",
+          "isChecked": false,
+          "status": "in review"
+        },
+        {
+          "id": 47,
+          "task": "Check weather forecasts for the destination",
+          "isChecked": true,
+          "status": "approved"
+        },
+        {
+          "id": 48,
+          "task": "Confirm hotel reservations",
+          "isChecked": false,
+          "status": "in progress"
+        },
+        {
+          "id": 49,
+          "task": "Pack travel snacks and entertainment",
+          "isChecked": true,
+          "status": "in review"
+        },
+        {
+          "id": 50,
+          "task": "Set up automatic bill payments while away",
+          "isChecked": true,
+          "status": "approved"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "projectName": "Hobbies",
+      "todos": [
+        {
+          "id": 51,
+          "task": "Practice playing the piano for 1 hour",
+          "isChecked": true,
+          "status": "in progress"
+        },
+        {
+          "id": 52,
+          "task": "Work on a new painting canvas",
+          "isChecked": false,
+          "status": "approved"
+        },
+        {
+          "id": 53,
+          "task": "Read about photography composition techniques",
+          "isChecked": false,
+          "status": "in review"
+        },
+        {
+          "id": 54,
+          "task": "Visit the local art supply store",
+          "isChecked": true,
+          "status": "in progress"
+        },
+        {
+          "id": 55,
+          "task": "Write a short story or poem",
+          "isChecked": false,
+          "status": "approved"
+        },
+        {
+          "id": 56,
+          "task": "Try out a new hiking trail",
+          "isChecked": true,
+          "status": "in review"
+        },
+        {
+          "id": 57,
+          "task": "Experiment with new cooking recipes",
+          "isChecked": true,
+          "status": "approved"
+        },
+        {
+          "id": 58,
+          "task": "Join a local photography club",
+          "isChecked": false,
+          "status": "in progress"
+        },
+        {
+          "id": 59,
+          "task": "Attend a live music concert",
+          "isChecked": true,
+          "status": "in review"
+        },
+        {
+          "id": 60,
+          "task": "Explore a new museum or art gallery",
+          "isChecked": false,
+          "status": "approved"
+        }
+      ]
+    }
+  ]
+}
