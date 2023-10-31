@@ -1,37 +1,38 @@
 function addProjects(data) {
   for (let i = 0; i < 6; i++) {
     let card = document.querySelector("#card-" + (i + 1));
-    card.innerHTML = data.projects[i]["projectName"];
+    card.innerHTML = data[i]["projectName"];
   }
 }
-projectData = {};
 
-function getProjects() {
-  fetch("tasks.json")
-    .then((respone) => respone.json())
-    .then((data) => {
-      addProjects(data);
-      projectData = data;
-      showTasks();
-    });
+let projects = {};
+
+async function getProjects() {
+  const api_url = "http://localhost:3000/projects";
+  const response = await fetch(api_url);
+  const data = await response.json();
+  addProjects(data);
+  projects = data;
 }
-function showTasks() {
+
+async function showTasks() {
   viewTasks(1);
 }
 
-function viewTasks(id) {
+async function viewTasks(id) {
+  const api_url = `http://localhost:3000/${id}}`;
+  const response = await fetch(api_url);
+  const data = await response.json();
   // change container color
   const selectedCard = document.querySelector(`#container-${id}`);
-  // selectedCard.addEventListener("mouseover", function(){})
   selectedCard.style.borderWidth = "thick";
   selectedCard.style.borderColor = "white";
 
   const projectName = document.querySelector(".right-section-name");
-  projectName.innerHTML = projectData.projects[id - 1].projectName;
+  projectName.innerHTML = projects[id - 1]["projectName"];
   const taskList = document.querySelector(".task-list");
   taskList.innerHTML = "";
-  let todoList = projectData.projects[id - 1].todos;
-  todoList.forEach((apiTask) => {
+  data.forEach((todo) => {
     const task = document.createElement("div");
     task.className = "task";
 
@@ -40,31 +41,29 @@ function viewTasks(id) {
     const checkBox = document.createElement("img");
     checkBox.className = "checkbox";
 
-    console.log(apiTask.isChecked);
-    if (apiTask.isChecked === true) {
+    if (todo["isChecked"] === true) {
       checkBox.src = "images/check.png";
-    } else if (apiTask.isChecked === false) {
+    } else if (todo["isChecked"] === false) {
       checkBox.src = "images/uncheck.png";
     }
     todoCheckbox.append(checkBox);
 
     const tasks = document.createElement("li");
     tasks.classList.add("tasks");
-    tasks.textContent = apiTask.task;
+    tasks.textContent = todo["task"];
 
     task.append(todoCheckbox);
     task.append(tasks);
 
     const statusDiv = document.createElement("div");
     statusDiv.className = "status-div";
-    setTaskStyles(statusDiv, apiTask.status);
+    setTaskStyles(statusDiv, todo["status"]);
 
     const todoContainer = document.createElement("div");
     todoContainer.className = "todo-container";
     todoContainer.append(task);
     taskList.append(todoContainer);
     todoContainer.append(statusDiv);
-    console.log("Again");
     todoContainer.addEventListener("mouseover", function () {
       initialSRC = checkBox.src;
       if (initialSRC == "http://127.0.0.1:5500/images/uncheck.png") {
@@ -103,3 +102,4 @@ function setTaskStyles(element, status) {
 }
 
 getProjects();
+showTasks();
