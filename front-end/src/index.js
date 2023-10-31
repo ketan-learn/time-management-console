@@ -41,9 +41,9 @@ async function viewTasks(id) {
     const checkBox = document.createElement("img");
     checkBox.className = "checkbox";
 
-    if (todo["isChecked"] === true) {
+    if (todo["isChecked"] === 1) {
       checkBox.src = "images/check.png";
-    } else if (todo["isChecked"] === false) {
+    } else if (todo["isChecked"] === 0) {
       checkBox.src = "images/uncheck.png";
     }
     todoCheckbox.append(checkBox);
