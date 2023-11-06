@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  db:
+    image: imageName
+  backend:
+    image: node:14
+    build:
+      context: .
+    command: >
+      bash -c "cd /usr/src/app && npm install && npm start"
+    volumes:
+      - ./backend/src:/usr/src/app/src
+      - ./backend/package.json:/usr/src/app/package.json
+      - ./backend/package-lock.json:/usr/src/app/package-lock.json
+    ports:
+      - 3000:3000
+
+    environment:
+      HOST_NAME: "127.0.0.1"
+      DB_USERNAME: "root"
+      DB_PASSWORD: ""
+      DB_NAME: "notes_app"
+
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./frontend:/usr/share/nginx/html
+    ports:
+      - 3001:80
+    depends_on:
+      - backend
