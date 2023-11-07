@@ -5,8 +5,6 @@ function addProjects(data) {
   }
 }
 
-console.log(document.URL);
-
 let projects = {};
 
 async function getProjects() {
@@ -44,9 +42,9 @@ async function viewTasks(id) {
     checkBox.className = "checkbox";
 
     if (todo["isChecked"] === 1) {
-      checkBox.src = "/frontend/images/check.png";
+      checkBox.src = "/images/check.png";
     } else if (todo["isChecked"] === 0) {
-      checkBox.src = "/frontend/images/uncheck.png";
+      checkBox.src = "/images/uncheck.png";
     }
     todoCheckbox.append(checkBox);
 
@@ -66,18 +64,20 @@ async function viewTasks(id) {
     todoContainer.append(task);
     taskList.append(todoContainer);
     todoContainer.append(statusDiv);
+    console.log(window.location.href);
+    console.log(`http://${window.location.href}images/uncheck.png`);
     todoContainer.addEventListener("mouseover", function () {
       initialSRC = checkBox.src;
-      if (initialSRC == "http://127.0.0.1:5500/frontend/images/uncheck.png") {
-        checkBox.src = "http://127.0.0.1:5500/frontend/images/check.png";
+      if (initialSRC == `http://${window.location.href}images/uncheck.png`) {
+        checkBox.src = `http://${window.location.href}images/check.png`;
       }
     });
     todoContainer.addEventListener("mouseout", function () {
-      if (initialSRC == "http://127.0.0.1:5500/frontend/images/uncheck.png") {
-        checkBox.src = "http://127.0.0.1:5500/frontend/images/uncheck.png";
+      if (initialSRC == `http://${window.location.href}images/uncheck.png`) {
+        checkBox.src = `http://${window.location.href}images/uncheck.png`;
       }
-      if (initialSRC == "http://127.0.0.1:5500/frontend/images/check.png") {
-        checkBox.src = "http://127.0.0.1:5500/frontend/images/check.png";
+      if (initialSRC == `http://${window.location.href}images/check.png`) {
+        checkBox.src = `http://${window.location.href}images/check.png`;
         initialSRC = "";
       }
     });

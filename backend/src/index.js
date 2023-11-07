@@ -6,6 +6,10 @@ let cors = require("cors");
 const port = process.env.PORT || 3000;
 app.use(cors());
 
+app.get("/test", async (req, res) => {
+  res.send("WOrking");
+});
+
 app.get("/projects", async (req, res) => {
   const projects = await db.getProjects();
   res.send(projects);
